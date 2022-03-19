@@ -10,6 +10,7 @@ Desktop notifier for canvas assignments and information
 2. Obtain your canvas user-id, the five-digit number at the end of your canvas URL
    
 `https://canvas.schoolname.edu/about/12345`
+
 3. Obtain your API access key from your canvas profile settings under 'approved integrations'
 
 
