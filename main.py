@@ -46,7 +46,7 @@ def assigns_due_today():
             due_date = iso_to_local(due_date)
             if due_date[0:10] == str(date.today()):
                 due_today = due_today + e['title'] + "\n"
-        # print(due_date)
+       
 
     if due_today == "":
         due_today = "Nothing due the rest of the day :)"
