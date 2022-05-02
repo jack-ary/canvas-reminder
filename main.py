@@ -5,8 +5,8 @@ from dateutil import tz
 import sched
 import time
 
-API_URl = "https://canvas.calpoly.edu"
-API_KEY = "15279~egR5cLEo59vojkI9m7U2DvDjFRATI9MG0vnjm6njEE8IxDwGAOTiwUDxNudoVyoM"
+API_URl = "https://canvas.yourSchool.edu"
+API_KEY = "YOUR_API_KEY"
 
 canvas = Canvas(API_URl, API_KEY)
 user = canvas.get_user(62776)
@@ -54,48 +54,4 @@ def assigns_due_today():
 
 
 assigns_due_today()
-
-#scheduler.enterabs(time.time() + 0, 1, assigns_due_today, argument=())
-#scheduler.run()
-
-
-#https://plyer.readthedocs.io/en/latest/#
-#print(events[1]['assignment']['due_at'])
-
-
-# course = canvas.get_course(78430) # Course Code
-# assignments = course.get_assignments()
-#
-# assignments_response: list = []
-# for a in assignments:
-#     print(a)
-#     assignments_response.append(a)
-#     print(a.due_at)
-
-
-
-
-# today = date.today()
-# nextWeek = today + timedelta(days=7)
-#
-# format_str = "%a %b %d"
-# response_msg = "What's due in the next 7 days:"
-# for a in assignments_response:
-#     if date.fromisoformat(a.due_at.split("T")[0]) <= nextWeek:
-#         due_date = date.fromisoformat(a.due_at.split("T")[0]).strftime(format_str)
-#         response_msg += f"\n{a.name} due {due_date}"
-#         print(response_msg)
-
-
-# for assignment in assignments:
-#     print(assignment)
-
-
-# assignments = course.get_assignments()
-# for assignment in assignments:
-#     print(assignment)
-
-# courses = canvas.get_courses(enrollment_state='active')
-# for course in courses:
-#     print(course)
 
