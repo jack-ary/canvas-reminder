@@ -1,5 +1,5 @@
 # canvas-reminder
-Desktop notifier for canvas assignments and information
+Automated desktop notifier for canvas assignments do on the current day. 
 # Implementation:
 1. Use the command line to install the correct libraries 
 
