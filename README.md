@@ -26,3 +26,5 @@ https://python.plainenglish.io/how-to-send-desktop-notifications-with-python-62a
 https://github.com/mattg1243/whats-due-bot/blob/main/src/main.py
 
 https://stackoverflow.com/questions/68664644/how-can-i-convert-from-utc-time-to-local-time-in-python
+
+https://www.geeksforgeeks.org/sched-module-in-python/
