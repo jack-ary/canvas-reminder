@@ -7,7 +7,7 @@ API_URl = "https://canvas.yourSchool.edu"
 API_KEY = "YOUR_API_KEY"
 
 canvas = Canvas(API_URl, API_KEY)
-user = canvas.get_user(62776)
+user = canvas.get_user(userid)
 events = canvas.get_upcoming_events()
 
 
