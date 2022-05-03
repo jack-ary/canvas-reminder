@@ -1,7 +1,13 @@
 # canvas-reminder
-Desktop notifier for canvas assignments and information
+Desktop notifier for canvas assignments and information. This program will send a desktop notification telling you what 
+assignments are due the day that the program is run. I have my program scheduled to run every day in the morning when I know I will be on my computer. 
+See step 5 for scheduling the program to run as a task. 
+Note: if an assignment is due before you run the program, it will not be a part of the notification, evening though that assignment 
+was still due 'today.' The command prompt will automatically open as part of running the program as a task, but you don't have to use it, 
+and it will automatically close when the task has been executed. 
+
 # Implementation:
-1. Use the command line to install the correct libraries 
+1. Install the correct libraries with the command line: 
 
 `pip install canvas api`
    
@@ -17,6 +23,11 @@ Desktop notifier for canvas assignments and information
 
 
 4. Paste your canvas URL, API access key, and user-id into main.py 
+
+
+5. To schedule when your Windows computer will run the program, you must put it in a task (you must use task scheduler, not task manager). 
+Follow [these](http://theautomatic.net/2017/10/03/running-python-task-scheduler/#:~:text=Once%20you%20know%20your%20Python%20script%20works%20from,click%20on%20%E2%80%9CAction%E2%80%9D%2C%20and%20then%20press%20%E2%80%9CCreate%20Task.%E2%80%9D) steps.
+
 
 # References: 
 https://canvasapi.readthedocs.io/en/stable/getting-started.html
