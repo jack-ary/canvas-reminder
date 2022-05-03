@@ -2,8 +2,9 @@
 Desktop notifier for canvas assignments and information. This program will send a desktop notification telling you what 
 assignments are due the day that the program is run. I have my program scheduled to run every day in the morning when I know I will be on my computer. 
 See step 5 for scheduling the program to run as a task. 
-Note: if an assignment is due before you run the program, it will not be a part of the notification, evening though that assignment 
-was still due 'today.' The command prompt will automatically open as part of running the program as a task, but you don't have to use it, 
+Note: if an assignment is due before the time that you run the program, it will not be a part of the notification, evening though that assignment 
+was still due 'today,' because its due date has already passed. The program does however account for assignments that 
+are marked as 'all_day', and they will appear on the desktop notification the day that they are due. The command prompt will automatically open as part of running the program as a task, but you don't have to use it, 
 and it will automatically close when the task has been executed. 
 
 
