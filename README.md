@@ -2,10 +2,16 @@
 Desktop notifier for canvas assignments and information. This program will send a desktop notification telling you what 
 assignments are due the day that the program is run. I have my program scheduled to run every day in the morning when I know I will be on my computer. 
 See step 5 for scheduling the program to run as a task. 
-Note: if an assignment is due before the time that you run the program, it will not be a part of the notification, evening though that assignment 
+
+
+Notes: 
+1. If an assignment is due before the time that you run the program, it will not be a part of the notification, evening though that assignment 
 was still due 'today,' because its due date has already passed. The program does however account for assignments that 
-are marked as 'all_day', and they will appear on the desktop notification the day that they are due. The command prompt will automatically open as part of running the program as a task, but you don't have to use it, 
+are marked as 'all_day', and they will appear on the desktop notification the day that they are due. 
+2. The command prompt will briefly open as part of running the program as a task, but you don't have to use it, 
 and it will automatically close when the task has been executed. 
+3. The canvas API uses times in UTC, so this program converts those times to the time zone used by the machine the code is run on, in order to determine
+due dates. 
 
 
 # Implementation:
@@ -32,12 +38,11 @@ Follow [these](http://theautomatic.net/2017/10/03/running-python-task-scheduler/
 
 
 # References: 
-https://canvasapi.readthedocs.io/en/stable/getting-started.html
+[Canvas API documentation](https://canvasapi.readthedocs.io/en/stable/getting-started.html)
 
-https://python.plainenglish.io/how-to-send-desktop-notifications-with-python-62a738850fbf
+[Sending desktop notifications](https://python.plainenglish.io/how-to-send-desktop-notifications-with-python-62a738850fbf)
 
-https://github.com/mattg1243/whats-due-bot/blob/main/src/main.py
+[Using the Canvas API](https://github.com/mattg1243/whats-due-bot/blob/main/src/main.py)
 
-https://stackoverflow.com/questions/68664644/how-can-i-convert-from-utc-time-to-local-time-in-python
+[Converting UTC times](https://stackoverflow.com/questions/68664644/how-can-i-convert-from-utc-time-to-local-time-in-python)
 
-https://www.geeksforgeeks.org/sched-module-in-python/
