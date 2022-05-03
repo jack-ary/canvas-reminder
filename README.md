@@ -6,8 +6,9 @@ Note: if an assignment is due before you run the program, it will not be a part 
 was still due 'today.' The command prompt will automatically open as part of running the program as a task, but you don't have to use it, 
 and it will automatically close when the task has been executed. 
 
+
 # Implementation:
-1. Install the correct libraries with the command line: 
+1. Install the correct libraries with the command line:
 
 `pip install canvas api`
    

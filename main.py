@@ -14,7 +14,6 @@ events = canvas.get_upcoming_events()
 
 # scheduler = sched.scheduler(time.time, time.sleep)
 
-
 def iso_to_local(iso):
     """
     Converts a complete iso-8601 string to the machines current time zone. Main logic from:
