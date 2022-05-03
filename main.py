@@ -2,8 +2,6 @@ from canvasapi import Canvas
 from plyer import notification
 from datetime import *
 from dateutil import tz
-# import sched
-# import time
 
 API_URl = "https://canvas.yourSchool.edu"
 API_KEY = "YOUR_API_KEY"
@@ -12,7 +10,6 @@ canvas = Canvas(API_URl, API_KEY)
 user = canvas.get_user(62776)
 events = canvas.get_upcoming_events()
 
-# scheduler = sched.scheduler(time.time, time.sleep)
 
 def iso_to_local(iso):
     """
